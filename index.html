@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color:#ffcc00;">PHOTO EDITOR</h1>
+    <div class="container">
+        <div class="tool">
+            <div class="brightness" id="brightness" onclick="checkfilter('brightness')">🔆<p>Brightness</p></div>
+            <div class="contrast" id="contrast" onclick="checkfilter('contrast')">☯︎<p>Contrast</p></div>
+            <div class="grayscale" id="grayscale" onclick="checkfilter('grayscale')">💿<p>Grayscale</p></div>
+            <div class="Sepia" id="sepia" onclick="checkfilter('sepia')">🟤<p>Sepia</p></div>
+            <div class="brightness" id="blur" onclick="checkfilter('blur')">🏻<p>blur</p></div>
+            <div class="contrast" id="invert" onclick="checkfilter('invert')">◑<p>invert</p></div>
+            <div class="Sepia" id="saturate" onclick="checkfilter('saturate')">◎<p>saturate</p></div>
+            <!-- <div class="grayscale" id="opacity" onclick="checkfilter('opacity')">💿<p>opacity</p></div> -->
+        </div>
+        <div class="img-box">
+            <div class="img-input" id="img-input">
+                <input type="file" onchange="handlerfileinput(event)" hidden id="fileinput">
+                <span id="fileicon" class="fileicon">📁</span>
+                <p id="filepara">Choose the file</p>
+                <img src="" class="img"  id="img" height="280px" width="330px">
+                <canvas id="canvas" style="display:none;"></canvas>
+            </div>
+            <div class="download">
+                <button onclick="downloadImage()">Download</button>
+            </div>
+            <div class="range">
+                <input type="range" id="range" value="0" min="100" max="200" oninput="change()" >
+                <p id="rangePercentage"></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

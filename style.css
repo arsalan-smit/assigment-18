@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+    height: 70vh;
+    border-radius: 8px;
+    display: flex;
+    /* background-color: gray; */
+    background-color: #2c2c2c;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    margin-top: 60px;
+}
+.tool{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 15%;
+}
+.tool>div{
+    height: 14.2%;
+    border-right: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    &:hover{
+        cursor: pointer;
+        background-color: #4e4e4e;
+    }
+}
+.tool>div>p{
+    font-size: 16px;
+    margin: 0 auto;
+    color: #b3b3b3;
+}
+.img-box{
+    height: 70%;
+    width: 80%;
+    margin: auto auto;
+    /* background-color: lightgray; */
+    background-color: #3e3e3e;
+    box-shadow: 2px 4px 14px 4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.img-input{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffcc00;
+    /* background-color: #3e3e3e; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    &:hover{
+        cursor: pointer;
+        background-color: #4e4e4e;
+    }
+}
+.img-input>p{
+    color: #ffcc00;
+}
+.fileicon{
+    font-size: 70px;
+    margin: 0 auto;
+}
+.img{
+    display: none;
+}
+/*.imgblock{
+    display: block;
+} */
+.download{
+    border-top: 1px solid black;
+}
+.download>button{
+    margin-left: 450px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 6px;
+    margin-top: 2px;
+    box-shadow: 2px 4px 14px 4px rgba(0,0,0,0.75);
+    &:hover{
+        cursor: pointer;
+        background-color: #0071a1;
+    }
+}
+.range>input{
+    margin-top: 20px;
+    width: 100%;
+    accent-color: #ffcc00;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.range>p{
+    margin: 0 auto;
+    padding-left: 20px;
+    color: #b3b3b3;
+}
+/* filter: blur(10px);
+   contrast()
+   drop-shadow(5px 0px 5px red)
+   grayscale()
+   hue-rotate(240deg)
+   invert(20%) 
+   opacity(50%)
+   saturate(50%)
+   sepia() 
+   url();
+  */
